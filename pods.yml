@@ -6,6 +6,7 @@ metadata:
     app: nodeapp
 spec:
 <maven -project>
+<sedhfg dbfgh>
   containers:
     - name: nodeapp
       image: kammana/nodeapp:v1
