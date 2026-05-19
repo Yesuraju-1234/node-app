@@ -15,6 +15,7 @@ pipeline {
                     sh "docker login -u kammana -p ${dockerHubPwd}"
                     sh "docker push kammana/nodeapp:${DOCKER_TAG}"
                 }
+<gitgub>
             }
         }
         stage('Deploy to DevServer'){
