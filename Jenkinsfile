@@ -11,6 +11,10 @@ pipeline {
                 sh "docker build . -t ${IMAGE_URL_WITH_TAG}"
             }
         }
+
+		<html
+		sdhf
+		vfgt>
         stage('Nexus Push'){
             steps{
                 withCredentials([string(credentialsId: 'nexus-pwd', variable: 'nexusPwd')]) {
