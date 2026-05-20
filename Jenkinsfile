@@ -29,6 +29,8 @@ pipeline {
                     withCredentials([string(credentialsId: 'nexus-pwd', variable: 'nexusPwd')]) {
                         sh "ssh ec2-user@172.31.0.38 docker login -u admin -p ${nexusPwd} ${NEXUS_URL}"
                     }
+					<MAVEN-PROJECTS>
+						CODE DONE
 					// Remove existing container, if container name does not exists still proceed with the build
 					sh script: "ssh ec2-user@172.31.0.38 docker rm -f nodeapp",  returnStatus: true
                     
